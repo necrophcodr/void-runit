@@ -1,0 +1,8 @@
+#!/bin/sh
+
+UID=`pwd -P`
+UID=${UID##*/}
+
+if [ -d "/home/$UID/service" ]; then
+	chpst -u$UID runsvdir /home/$UID/service
+fi
