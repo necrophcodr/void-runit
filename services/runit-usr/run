@@ -1,4 +1,8 @@
 #!/bin/sh
+#
+# Usage:
+# `ln -s /etc/sv/runit-usr /var/service/[someuser]`
+#
 
 UID=`pwd -P`
 UID=${UID##*/}
