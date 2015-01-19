@@ -1,7 +1,9 @@
 #!/bin/sh
 #
 # Usage:
-# `ln -s /etc/sv/runit-usr /var/service/[someuser]`
+# 1: `cp -r /etc/sv/runit-usr /etc/sv/usr/[someuser]`
+# 2: `ln -s /etc/sv/usr/[someuser] /var/service/[someuser]`
+# 3: You are done. Relax.
 #
 
 UID=`pwd -P`
